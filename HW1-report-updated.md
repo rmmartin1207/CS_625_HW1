@@ -49,7 +49,7 @@ Or resized with HTML:
 
 **Q1.** After you have created the final bar chart displaying the data from the South region, pick one of the other regions, save the chart as an image, and include it below.  
 
-<img src="Tableau Chart for the East Region.png" height="240" alt="Tableau bar chart">
+<img src="Tableau Chart for the East Region2.png" height="240" alt="Tableau bar chart">
 
 _Description: This bar chart shows sales by product category for the East region. Technology has the highest sales, followed by Furniture and Office Supplies._  
 
