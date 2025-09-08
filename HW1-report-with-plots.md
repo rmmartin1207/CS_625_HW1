@@ -101,7 +101,7 @@ _Description: This bar chart shows the average body mass for each penguin specie
 
 **Q4.** Comment out `vl.y().fieldN("Origin"),` in the horizontal bar chart. Insert PNG below and explain.  
 
-![Vega-Lite modified chart](vegalite.png)  
+![Vega-Lite modified chart](https://github.com/rmmartin1207/CS_625_HW1/blob/main/VegaPlot.png)  
 
 **Answer:** With the `y` encoding removed, the chart no longer separates bars by origin. Instead, all bars collapse into a **single aggregate bar** representing total counts across all origins. Vega-Lite defaults to aggregating when a categorical encoding is missing.
 
