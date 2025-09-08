@@ -1,0 +1,122 @@
+# Homework 1 Report
+
+**Name:** Robert M. Martin Jr  
+**Course:** CS 625 Data Visualization  
+**Due Date:** September 7, 2025  
+
+---
+
+## Git and GitHub
+
+**Q1.** What is the URL of the new GitHub repo that you created in your personal account?  
+
+**Answer:** [https://github.com/rmmartin1207/CS_625_HW1](https://github.com/rmmartin1207/CS_625_HW1)
+
+**Q2.** In which direction does the 'pull' command work?  
+
+**Answer:** The `git pull` command downloads changes from the **remote repository (GitHub.com)** to the **local repository**.
+
+**Q3.** If you committed a change on your local machine, but do not see the update on GitHub.com, what step might you have forgotten?  
+
+**Answer:** You likely forgot to run the `git push` command, which sends your local commits to GitHub.
+
+---
+
+## Markdown
+
+**Q1.** Create a bulleted list with at least 3 items. How is this different from a numbered list?  
+
+- Item one  
+- Item two  
+- Item three  
+
+Numbered lists (1., 2., 3.) imply sequence or ranking, while bulleted lists simply group related items without order.  
+
+**Q2.** Write a single paragraph that demonstrates the use of *italics*, **bold**, ***bold italics***, `code`, and includes a [link](https://openai.com).  
+
+This is a paragraph with *italics*, **bold**, ***bold italics***, and `inline code`. Here is also a [link to OpenAI](https://openai.com).  
+
+**Q3.** Find an image of an animal, upload it to your repo, and insert it below.  
+
+![Christy the animal](Christy.png)
+
+Or resized with HTML:  
+<img src="Christy.png" height="200" alt="Christy the animal">  
+
+---
+
+## Tableau
+
+**Q1.** After you have created the final bar chart displaying the data from the South region, pick one of the other regions, save the chart as an image, and include it below.  
+
+<img src="Tableau_Chart_East_Region.png" height="240" alt="Tableau bar chart">
+
+_Description: This bar chart shows sales by product category for the East region. Technology has the highest sales, followed by Furniture and Office Supplies._  
+
+---
+
+## Google Colab
+
+**Q1.** Provide the shareable link to your edited Colab notebook.  
+
+**Answer:** [My Colab Notebook](https://colab.research.google.com/drive/example_link)  
+
+*(Replace `example_link` with your actual Colab shareable link.)*  
+
+---
+
+## Python / Seaborn
+
+**Q1.** Insert the first scatterplot figure and describe what it shows.  
+
+![Seaborn scatterplot](scatter.png)  
+
+**Answer:** The scatterplot maps **bill_length_mm** (x) vs **bill_depth_mm** (y) for penguins. Points tend to form **distinct clusters** corresponding to species and show a general **trade‑off pattern** (longer bills often accompany shallower depths and vice‑versa). Outliers are sparse and most observations lie in a few dense clouds.
+
+**Q2.** Insert the bar chart figure and describe what it shows.  
+
+![Seaborn bar chart](bar.png)  
+
+**Answer:** This bar chart aggregates **body_mass_g** by **species** (the `.Agg()` layer computes an average for each category). Bars show that species differ in mean body mass—one species has the **largest average mass**, another the **smallest**, with a clear separation across categories.
+
+**Q3.** Remove the outer parenthesis from the second figure code. What happened?  
+
+**Answer:** Without the outer parentheses, Python no longer allows the line break before the chained method call (the leading `.add(...)`). The result is a **syntax/indentation error** because implicit line continuation was provided by the parentheses. Keeping the outer parentheses (or putting the expression on one line) is required for multi‑line method chaining.
+
+---
+
+## Observable / Vega-Lite
+
+**Q1.** Replace `markCircle()` with `markSquare()`. What happened?  
+
+**Answer:** The scatterplot points changed shape from **circles to squares**. The data and axes remained identical, only the glyph used to represent each data point was altered.
+
+**Q2.** Replace `markCircle()` with `markPoint()`. What happened?  
+
+**Answer:** The scatterplot points changed to a **generic point marker** (a small filled symbol). Again, only the shape changed—the positions and values were the same.
+
+**Q3.** What change is needed to swap the x and y axes?  
+
+**Answer:** Swap the field assignments in the encoding: change `vl.x().fieldQ("Horsepower")` to `vl.y().fieldQ("Horsepower")` and `vl.y().fieldQ("Miles_per_Gallon")` to `vl.x().fieldQ("Miles_per_Gallon")`. This effectively **transposes the axes**.
+
+**Q4.** Comment out `vl.y().fieldN("Origin"),` in the horizontal bar chart. Insert PNG below and explain.  
+
+![Vega-Lite modified chart](vegalite.png)  
+
+**Answer:** With the `y` encoding removed, the chart no longer separates bars by origin. Instead, all bars collapse into a **single aggregate bar** representing total counts across all origins. Vega-Lite defaults to aggregating when a categorical encoding is missing.
+
+---
+
+## References
+
+- GitHub Docs: [Hello World](https://docs.github.com/en/get-started/quickstart/hello-world)  
+- Git basics: [git - the simple guide](https://rogerdudler.github.io/git-guide/)  
+- Markdown: [Markdown Basic Syntax](https://www.markdownguide.org/basic-syntax)  
+- Markdown Cheatsheet: [adam-p/markdown-here](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)  
+- Tableau Tutorial: [Get Started with Tableau Desktop](https://help.tableau.com/current/guides/get-started-tutorial/en-us/get-started-tutorial-home.htm)  
+- Google Colab FAQ: [Colab FAQ](https://research.google.com/colaboratory/faq.html)  
+- Seaborn: [Objects API Tutorial](https://seaborn.pydata.org/tutorial/objects_interface.html)  
+- Palmer Penguins Dataset: [palmerpenguins on GitHub](https://github.com/mcnakhaee/palmerpenguins)  
+- Vega-Lite Docs: [Charting with Vega-Lite](https://observablehq.com/@observablehq/vega-lite)  
+
+*(Add any StackOverflow posts, ChatGPT conversations, or other resources you actually used.)*
