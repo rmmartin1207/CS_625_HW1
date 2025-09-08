@@ -59,7 +59,7 @@ _Description: This bar chart shows sales by product category for the East region
 
 **Q1.** Provide the shareable link to your edited Colab notebook.  
 
-**Answer:** [My Colab Notebook](https://colab.research.google.com/drive/example_link)  
+**Answer:** [My Colab Notebook]([https://colab.research.google.com/drive/example_link](https://github.com/rmmartin1207/CS_625_HW1/blob/main/Copy_of_Overview_of_Colaboratory_Features.ipynb))  
 
 *(Replace `example_link` with your actual Colab shareable link.)*  
 
